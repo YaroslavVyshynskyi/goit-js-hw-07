@@ -25,7 +25,6 @@ function createGalleryItemMarkup(elements) {
     .join("");
 };
 
-let gallery = new SimpleLightbox('.gallery__item');
-gallery.on('show.simplelightbox', function () {
+let gallery = new SimpleLightbox('.gallery__item', function () {
     gallery.options.captionDelay = 250;
 });
